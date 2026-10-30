@@ -1,0 +1,11 @@
+{
+  "name": "weir-security",
+  "owner": { "name": "Weir Security" },
+  "plugins": [
+    {
+      "name": "weir",
+      "source": "./",
+      "description": "Checks each action Claude Code proposes before it runs."
+    }
+  ]
+}

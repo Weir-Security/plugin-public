@@ -1,0 +1,15 @@
+#!/bin/sh
+# Runs the Weir binary built for this machine. Windows does not use this file: there
+# the hook's command resolves to weir.exe next to it.
+dir=$(dirname "$0")
+case "$(uname -s)" in
+  Darwin) os=darwin ;;
+  Linux) os=linux ;;
+  *) echo "Weir: no binary for $(uname -s)" >&2; exit 0 ;;
+esac
+case "$(uname -m)" in
+  x86_64 | amd64) arch=amd64 ;;
+  arm64 | aarch64) arch=arm64 ;;
+  *) echo "Weir: no binary for $(uname -m)" >&2; exit 0 ;;
+esac
+exec "$dir/weir-$os-$arch" "$@"

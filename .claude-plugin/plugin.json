@@ -1,0 +1,16 @@
+{
+  "name": "weir",
+  "displayName": "Weir",
+  "version": "0.2.0",
+  "description": "Checks each action Claude Code proposes before it runs: blocks or asks for the risky ones, saves a checkpoint before deletes, and logs labels only.",
+  "author": {
+    "name": "Weir Security"
+  },
+  "repository": "https://github.com/Weir-Security/plugin-public",
+  "license": "UNLICENSED",
+  "keywords": [
+    "security",
+    "guardrails",
+    "audit"
+  ]
+}
