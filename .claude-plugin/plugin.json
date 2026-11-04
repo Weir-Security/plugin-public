@@ -1,7 +1,7 @@
 {
   "name": "weir",
   "displayName": "Weir",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Checks each action Claude Code proposes before it runs: blocks or asks for the risky ones, saves a checkpoint before deletes, and logs labels only.",
   "author": {
     "name": "Weir Security"
