@@ -34,8 +34,11 @@ session, at most every 6 hours, the launcher asks the server for a newer one.
 `hooks/hooks.json` registers Weir for seven events: SessionStart, UserPromptSubmit,
 PreToolUse, PostToolUse, PostToolUseFailure, PermissionDenied and SessionEnd. Each is an
 exec-form hook (no shell) with a 10 second timeout (60 for SessionStart, which may
-download Weir), and a hook that fails lets the call through: Weir never stops Claude Code
-by crashing. A launcher that cannot get Weir says so once, at the session's start.
+download Weir). PreToolUse has `"onFailure": "block"`: a Weir that can't start, times out
+or crashes blocks that tool call instead of letting it through (Claude Code 2.1.295 and
+later; an older one ignores the field and lets it through). The other hooks let the work
+go on when they fail. A launcher that has not got Weir yet is not a failure: it lets the
+work go on and says so once, at the session's start.
 
 The launchers live in `runtime/`, not `bin/`: Claude Code puts a plugin's `bin/` on the
 Bash tool's PATH, and Weir's commands are for a person, not for the agent.
