@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "version": "v0.3.1-rc1",
+  "targets": {
+    "darwin-amd64": {
+      "weir": {
+        "file": "weir-darwin-amd64",
+        "size": 14576112,
+        "sha256": "ca4387e4b876f3e4c4b7b1b69385cbacdfc69dce21c354e89e1d62648a24e5ec"
+      },
+      "launcher": {
+        "file": "weir-launcher-darwin-amd64",
+        "size": 7217264,
+        "sha256": "55695425a94129950bfc4edb8a72540cfd32c15b06480fb72f5b6088fce8c133"
+      }
+    },
+    "darwin-arm64": {
+      "weir": {
+        "file": "weir-darwin-arm64",
+        "size": 13509010,
+        "sha256": "01b7b9c30b750a290e2b96fca80a75b3e8719f7559e3f7c8e3e55c496e2d4e9a"
+      },
+      "launcher": {
+        "file": "weir-launcher-darwin-arm64",
+        "size": 6674706,
+        "sha256": "183e506a5bf33f757e146205588d89587c0ac359cab0e3507cac5b981e9ac021"
+      }
+    },
+    "linux-amd64": {
+      "weir": {
+        "file": "weir-linux-amd64",
+        "size": 14266528,
+        "sha256": "65355859741742de67ed384b668bf54377f1bd454579b92ae34b67b9f36678d1"
+      },
+      "launcher": {
+        "file": "weir-launcher-linux-amd64",
+        "size": 7049376,
+        "sha256": "2fd50cda96b441810d35e52045be038e887fb7b61fc79491317195edd454ccbb"
+      }
+    },
+    "linux-arm64": {
+      "weir": {
+        "file": "weir-linux-arm64",
+        "size": 13172896,
+        "sha256": "cab4ea193e4feabad3208f9ea8aceb1670bf759ac58914fbe6638e52fe1fb07d"
+      },
+      "launcher": {
+        "file": "weir-launcher-linux-arm64",
+        "size": 6553760,
+        "sha256": "faf18bcffee860d33bd9b703bfcc4b371a03241d8067f9e1f1e746dbd16d1fc4"
+      }
+    },
+    "windows-amd64": {
+      "weir": {
+        "file": "weir-windows-amd64.exe",
+        "size": 14703616,
+        "sha256": "228ea88cd27f273f856cbe4186e2ed359502c6fca1da3bfd9fad87d7c25d791e"
+      },
+      "launcher": {
+        "file": "weir-launcher-windows-amd64.exe",
+        "size": 7435264,
+        "sha256": "cfd968068a782ca262ea4c8701ed7b1a003406e3ecd8267aeea73ac3bfca7e02"
+      }
+    }
+  }
+}
